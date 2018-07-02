@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src ="js/angular.min.js"></script>
+	<title>
+		Currency Filter
+	</title>
+</head>
+<body ng-App="">
+	<input type= "number" ng-model= "amount" ><br>
+	Amount :  {{amount | currency : '&#83771;'}}
+
+</body>
+</html>

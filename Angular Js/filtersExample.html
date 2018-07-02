@@ -1,0 +1,28 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<style> table ,th,td (border : 2px solid black)
+th (color : blue; background-color : brown)
+	
+</style>
+<head>
+	<title>Filters</title>
+</head>
+<body ng-app = "" ng-init= "employees =[{empId : 'e1001', empName : 'Ram', Basicpay : 1000},{empId : 'e1002', empName : 'Rahul' , Basicpay : 2000},{empId : 'e1003', empName : 'Raj' , Basicpay : 5000}]">
+
+	<table>
+		<tr>
+			<th>Employee Id</th>
+			<th>Employee Name</th>
+			<th>Basic Pay</th>
+		</tr>
+		<tr ng-repeat = "employee in employees | orderBy :'-empName'">
+
+			<td>{{employee.empId}}</td>
+			<td>{{employee.empName}}</td>
+			<td>{{employee.Basicpay}</td>
+		</tr>
+	</table>
+
+</body>
+</html>

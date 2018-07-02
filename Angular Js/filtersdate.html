@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "js/angular.min.js"></script>
+	<title> Filters Date</title>
+</head>
+<body ng-App ="">
+	<input type="date" ng-model ="joindate" /><br>
+	value : {{ joindate | date : "dd.MM.y" }}
+
+</body>
+</html>
